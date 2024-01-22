@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Center(
-        child: Image.asset("lib/images/doctor1.jpeg"),
+        child: Image.asset("asset/images/doctor1.jpeg"),
       ),
     );
   }
