@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_app_ui/utills/round_button.dart';
 import 'package:medical_app_ui/view/home_page.dart';
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
@@ -33,19 +34,9 @@ class _IntroPageState extends State<IntroPage> {
               child: Text("Find your doctor and make an appointment with one tap",style: TextStyle(fontSize: 25),),
             ),
             Spacer(),
-            InkWell(onTap: (){
+            RoundButton(name: "Get Started", onpress: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
-            },
-            child: Container(
-              width: width*0.9,
-              height: hieght*0.07,
-              decoration: BoxDecoration(
-                color: Colors.indigo,
-                borderRadius: BorderRadius.circular(15)
-              ),child: Center(
-              child: Text("Get Started",style: TextStyle(color: Colors.white,fontSize: 30),),
-            ),
-            ),),
+            },hieght: hieght*0.08,width: width*0.7,),
             Spacer(),
           ],
         ),
