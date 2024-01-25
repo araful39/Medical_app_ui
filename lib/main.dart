@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:medical_app_ui/view/home_page.dart';
+
 import 'package:medical_app_ui/view/intro_page.dart';
 
 void main(){
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: IntroPage(),
     );
   }
 }

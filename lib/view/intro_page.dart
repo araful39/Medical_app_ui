@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app_ui/utills/round_button.dart';
-import 'package:medical_app_ui/view/home_page.dart';
+import 'package:medical_app_ui/view/bottom_navigation_bar.dart';
+
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
 
@@ -35,7 +36,7 @@ class _IntroPageState extends State<IntroPage> {
             ),
             Spacer(),
             RoundButton(name: "Get Started", onpress: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>BottomNavigation()));
             },hieght: hieght*0.08,width: width*0.7,),
             Spacer(),
           ],
